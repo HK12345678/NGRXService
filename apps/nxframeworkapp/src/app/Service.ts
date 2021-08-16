@@ -10,7 +10,7 @@ export class RServicesService {
 
   addService(service: Service): Observable<{ serviceType: string }> {
     return this.http.post<{ serviceType: string }>(
-      `https://vue-completecourse.firebaseio.com/posts.json`,
+      `https://../posts.json`,
       service
     );
   }  
