@@ -1,0 +1,24 @@
+<div class="row my-4">
+  <div class="col-md-12">
+    <h3>Add Roster Service</h3>
+    <hr />
+    <form [formGroup]="postForm" (ngSubmit)="onAddPost()">
+      
+      <div class="mb-3">
+        <label>Service</label>
+        <textarea class="form-control" formControlName="Service"></textarea>
+       
+      </div>
+
+      <div class="my-3">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!postForm.valid"
+        >
+          Add Roster Service
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
