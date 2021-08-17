@@ -10,7 +10,7 @@ export class RServicesService {
 
   addService(service: Service): Observable<{ serviceType: string }> {
     return this.http.post<{ serviceType: string }>(
-      `https://../posts.json`,
+      `http://localhost:44355/api/AddService`,
       service
     );
   }  
